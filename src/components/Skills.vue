@@ -7,8 +7,9 @@
 
       <ul>
         <transition-group name="list" enter-active-class="animated bounceInUp" leave-active-class="animated bounceOutDown">
-          <li v-for="(data, index) in skills" :key='index'>{{index}}. {{data.skill}}</li>
+          <li v-for="(data, index) in skills" :key='index'>{{index}}. {{data.skill}}
             <i class="fa fa-minus-circle" v-on:click="remove(index)"></i>
+          </li>
         </transition-group>
       </ul>
     </div>
